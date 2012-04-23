@@ -1,0 +1,15 @@
+#import <Foundation/Foundation.h>
+#import "Constants.h"
+#include "zkSforce.h"
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+#endif
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"[MailForce] %s " fmt), __PRETTY_FUNCTION__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+#define ALog(fmt, ...) NSLog((@"[MailForce] %s " fmt), __PRETTY_FUNCTION__, ##__VA_ARGS__);
