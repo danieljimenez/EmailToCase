@@ -1,0 +1,3 @@
+[submodule "zkSforce"]
+	path = zkSforce
+	url = https://github.com/superfell/zkSforce.git
